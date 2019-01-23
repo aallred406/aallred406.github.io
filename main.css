@@ -24,9 +24,10 @@ h1, h2 {
 }
 
 header, main, footer {
-  /*margin: .5em auto;*/
+  margin: auto;
   padding: .5rem;
-  max-width: 75%;
+  max-width: 70%;
+  align-content: center;
 }
 
 img {
