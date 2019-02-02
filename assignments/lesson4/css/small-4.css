@@ -40,9 +40,10 @@ ul {
 }
 header {
   background: #B2E4DB;
-  display: inline-block;
+  display: block;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
   max-width: 960px;
 }
 /*#logo {
@@ -52,4 +53,8 @@ header {
 }*/
 header, img {
   vertical-align: middle;
+}
+.heading {
+  text-align: center;
+  margin: 0px;
 }
