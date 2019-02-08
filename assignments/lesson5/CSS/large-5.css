@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64em){
+
+nav ul li {
+  float: left;
+  align-content: center;
+  margin: 0 auto;
+  /*max-width: 960px;*/
+}
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+header {
+  margin-bottom: -18px;
+}
+#hero {
+  max-width: 75%;
+}
+#class {
+  max-width: 35%;
+  float: right;
+}
+.fiveday {
+  display: ;
+}
+}
