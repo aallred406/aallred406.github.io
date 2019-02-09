@@ -1,15 +1,19 @@
 @media only screen and (min-width: 64em){
 
 nav ul li {
-  float: left;
+  display: inline-block;                                                                                                                                                                                            
   align-content: center;
   margin: 0 auto;
-  /*max-width: 960px;*/
 }
 nav li a {
-  display: block;
   text-align: center;
   padding: 14px 16px;
+}
+nav li:first-child {
+  display: none;
+}
+ul {
+  margin-top: 15px;
 }
 header {
   margin-bottom: -18px;
@@ -22,6 +26,16 @@ header {
   float: right;
 }
 .fiveday {
-  display: ;
+  display: block;
+  margin: 0 auto;
 }
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: solid #302e2e 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 }
