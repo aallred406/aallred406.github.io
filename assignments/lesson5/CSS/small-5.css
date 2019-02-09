@@ -58,6 +58,8 @@ header, img {
 #hero {
   max-width: 100%;
   z-index: 1;
+  display: block;
+  margin: auto;
 }
 footer {
   background: #B2E4DB;
@@ -71,9 +73,9 @@ footer {
   padding: 5px;
   z-index: 2;
   max-width: 30%;
-  position: relative;
-  top: -275px;
-  left: 50px;
+  position: absolute;
+  top: 470px;
+  left: 5px;
   opacity: .8;
 }
 .townname {
@@ -82,6 +84,13 @@ footer {
 .fiveday {
   align-content: center;
   display: none;
+  padding:10px;
+}
+.fiveday h3 {
+  text-align: center;
+}
+.forcastimg {
+  max-width: 50px;
 }
 #class {
   max-width: 100%;
@@ -89,6 +98,7 @@ footer {
 article {
   background: #B2E4DB;
   padding: 10px;
+  overflow: auto;
 }
 .contact {
   background: #f0f0f0;

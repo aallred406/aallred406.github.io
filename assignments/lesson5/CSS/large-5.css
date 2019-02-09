@@ -21,12 +21,16 @@ header {
 #hero {
   max-width: 75%;
 }
+.weathersummary {
+  top: 300px;
+  left: 180px;
+}
 #class {
   max-width: 35%;
   float: right;
 }
 .fiveday {
-  display: block;
+  display: table;
   margin: 0 auto;
 }
 table {
