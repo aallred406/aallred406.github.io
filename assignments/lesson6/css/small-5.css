@@ -63,7 +63,7 @@ header, img {
 }
 .active {
   background-color: rgba(190, 188, 188, 0.2);
-  color: #302e2e;
+  color: #f0f0f0;
 }
 #hero {
   max-width: 100%;
