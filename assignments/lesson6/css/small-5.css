@@ -37,6 +37,16 @@ ul {
   margin-top: 0px;
   padding-left: 0px;
 }
+nav ul.hide{
+  display: none;
+}
+nav button {
+  background: #302e2e;
+  margin: .2rem 2%;
+  border: none;
+  font-size: 1.6rem;
+  color: #B2E4DB;
+}
 header {
   background: #B2E4DB;
   display: block;
@@ -52,7 +62,7 @@ header, img {
   margin: 0px;
 }
 .active {
-  background-color: #B2E4DB;
+  background-color: rgba(190, 188, 188, 0.2);
   color: #302e2e;
 }
 #hero {

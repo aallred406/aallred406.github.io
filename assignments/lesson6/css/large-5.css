@@ -9,7 +9,13 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
 }
-nav li:first-child {
+/*nav li:first-child {
+  display: none;
+}*/
+nav ul.hide {
+  display: block;
+}
+nav button {
   display: none;
 }
 ul {

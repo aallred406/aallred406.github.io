@@ -18,8 +18,9 @@
       </div>
     </header>
     <nav>
-      <ul>
-        <li><a href="#">&equiv; Menu</a></li>
+        <button onclick="toggleMenu()">&equiv;</button>
+      <ul id="primaryNav" class="hide">
+        <!--<li><a href="#">Menu</a></li>-->
         <li><a class="active" href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
@@ -31,7 +32,7 @@
       <h2 class="townname">Preston, Idaho</h2>
       <section class="mainhero">
         <picture id="hero">
-        <img src="images/hero-test.jpg" alt="bright blue sky" sizes="100vw"
+        <img src="images/hero-test.jpg" alt="bright blue sky" 
              srcset="images/hero-test-400.jpg 400w,
                      images/hero-test-800.jpg 800w,
                      images/hero-test-1200.jpg 1200w">
@@ -65,7 +66,12 @@
         </table>
       </section>
       <article>
-          <img src="images/class.jpg" alt="attentive class" id="class">
+          <picture>
+          <img src="images/class.jpg" alt="attentive class" id="class"
+               srcset="images/class-400.jpg 400w,
+                       images/class-800.jpg 800w,
+                       images/class-1200.jpg 1200w">
+          </picture>
         <h2>Winter Weather Safety Class</h2>
         <pre>by David Johnson</pre>
         <p>The Lion's Club hosted their annual winter saftey class yesterday at the community center. It was well
@@ -81,7 +87,11 @@
       
     </main>
     <footer>
-      <div class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho</div>
+      <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho<br>
+        <span id="currentdate"></span>
+      </p>
     </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
   </body>
 </html>
