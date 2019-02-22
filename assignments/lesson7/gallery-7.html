@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Weather and local events for the Tri-Cities, Preston, Soda Springs and Fish Haven, Idaho">
+    <title>Idaho Tri-Cities Weather | Preston | Weather Conditions and Forecast</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&7cSpecial+Elite" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">    
+    <link href="css/small-7.css" rel="stylesheet">
+    <link href="css/medium-7.css" rel="stylesheet">
+    <link href="css/large-7.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/weather-icon.png" alt="sun covered by storm cloud" id="logo">
+      <h1 class="heading">Idaho Tri-Cities Weather</h1>
+      <div id="motto">
+        <h4 class="heading">Enjoying the outdoors in South East Idaho.</h4>
+      </div>
+    </header>
+    <nav>
+        <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a class="active" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="townname">Gallery</h2>
+      <picture class="gallery" id="lightning">
+        <img srcset="images/lightning-400.jpg 400w,
+                     images/lightning-800.jpg 800w,
+                     images/lightning-1200.jpg 1200w"
+              sizes="(max-width: 400px) 400px,
+                     (max-width: 800px) 800px,
+                     1200px"
+              src="images/lightning-1200.jpg">
+      </picture>
+      <picture class="gallery" id="rainbow">
+        <img srcset="images/rainbow-400.jpg 400w,
+                     images/rainbow-800.jpg 800w,
+                     images/rainbow-1200.jpg 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images/rainbow-1200.jpg">
+      </picture>
+      <picture class="gallery" id="snowy"> 
+        <img srcset="images/snowy-trees-400.jpg 400w,
+                     images/snowy-trees-800.jpg 800w,
+                     images/snowy-trees-1200.jpg 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images/snowy-trees-1200.jpg">
+      </picture>
+      <picture class="gallery" id="sunset">
+        <img srcset="images/sunset-clouds-400.jpg 400w,
+                     images/sunset-clouds-800.jpg 800w,
+                     images/sunset-clouds-1200.jpg 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images/sunset-clouds-1200.jpg">
+      </picture>
+      <picture class="gallery" id="stormy">
+        <img srcset="images/stormy-road-400.jpg 400w,
+                     images/stormy-road-800.jpg 800w,
+                     images/stormy-road-1200.jpg 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images/stormy-road-1200.jpg">
+      </picture>
+      <picture class="gallery" id="tornado">
+        <img srcset="images/tornado-400.jpg 400w,
+                     images/tornado-800.jpg 800w,
+                     images/tornado-1200.jpg 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images/tornado-1200.jpg">
+      </picture>      
+      
+    </main>
+    <footer>
+      <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho<br>
+        <span id="currentdate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+  </body>
+</html>
