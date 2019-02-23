@@ -4,9 +4,6 @@ body {
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   color: #302e2e;
-  margin: auto;
-  max-width: 960px;
-  align-content: center;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Special Elite", monospace;
@@ -29,9 +26,9 @@ nav a:hover {
   color: #302e2e;
   background: #F0EBCE;
 }
-nav ul li {
+nav ul {
   display: flex;
-  justify-content: flex-start;
+  flex-direction:column;
   list-style-type: none;
 }
 ul {
@@ -52,59 +49,50 @@ nav button {
 #menu {
   justify-content: center;
 }
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  align-content: center;
+}
 header {
   background: #B2E4DB;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
-header, img {
-  vertical-align: center;
-}
-.heading {
-  justify-content: center;
-  flex-flow: column nowrap;
-  margin: 0px;
-}
-/*#logo {
-  justify-content: flex-start;
-}*/
 .active {
   background-color: rgba(190, 188, 188, 0.2);
   color: #f0f0f0;
 }
 #hero {
-  max-width: 100%;
+  width: 100%;
   display: block;
   margin: auto;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
 }
 .mainhero {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  z-index: 1;
+  position: relative;
 }
 footer {
   background: #B2E4DB;
   padding: 15px;
-  align-content: center;
   text-align: center;
+  max-width: 960px;
+  align-content: center;
+  margin: auto;
 }
+
 .weathersummary {
+  position: absolute;
+  top: 5px;
+  left: 10px;
   background: #302e2e;
   color: #f0f0f0;
-  padding: 5px;
+  padding: 15px;
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  z-index: 2;
   opacity: .8;
 }
 .label {
@@ -138,9 +126,11 @@ article {
   background: #f0f0f0;
   padding: 10px;
 }
-.gallery {
+.gallerygrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: auto; 
-  grid-gap: 2px;
+  width: 100%;
+}
+.gallerygrid figure img {
+  width: 100%;
 }
