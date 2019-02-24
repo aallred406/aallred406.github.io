@@ -64,6 +64,9 @@ header {
   padding-right: 10px;
   padding-bottom: 10px;
 }
+#motto {
+  font-family: "Special Elite", monospace;
+}
 .active {
   background-color: rgba(190, 188, 188, 0.2);
   color: #f0f0f0;
