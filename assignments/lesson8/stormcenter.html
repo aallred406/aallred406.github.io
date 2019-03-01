@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Weather and local events for the Tri-Cities, Preston, Soda Springs and Fish Haven, Idaho">
+  <title>Idaho Tri-Cities Weather | Storm Center | Weather Conditions and Forecast</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&7cSpecial+Elite" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small-7.css" rel="stylesheet">
+  <link href="css/medium-7.css" rel="stylesheet">
+  <link href="css/large-7.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="images/weather-icon.png" alt="sun covered by storm cloud" id="logo">
+    <div class="headertext">
+      <h1>Idaho Tri-Cities Weather</h1>
+      <div id="motto">
+        Enjoying the outdoors in South East Idaho.
+      </div>
+    </div>
+  </header>
+  <nav>
+
+    <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="assignments/lesson7/preston-7.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#" class="active">Storm Center</a></li>
+      <li><a href="assignments/lesson7/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form method="GET" action="thanks.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top">Full Name*: <input type="text" name="name" min="5" pattern="[A-Za-z]" required></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="someone@email.com"></label>
+        <label class="top">Phone*: <input type="tel" name="phone" required></label>
+        <label class="top">Zip Code*: <input type="number" name="zip" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date: <input type="date" name="date"></label>
+        <label class="top">Storm Type: <input list="stormType" name="stormType" placeholder="Please Select">
+        <datalist id="stormType">
+          <option value="Flash Flood"></option>
+          <option value="Hail"></option>
+          <option value="Hurricane"></option>
+          <option value="Thunderstorm"></option>
+          <option value="Tornado"></option>
+        </datalist></label>
+        <label class="top">Storm Severity: </label><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
+        <label class="top">Storm Region: 
+          <select name="region">
+            <option>Select Region</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select>
+        </label>
+        <label class="sbs">User In-danger: </label>
+          <label class="sbs"></label><input type="radio" name="danger" value="Yes">Yes</label>
+          <label class="sbs"></label><input type="radio" name="danger" value="Maybe">Maybe</label>
+          <label class="sbs"></label><input type="radio" name="danger" value="No">No</label>
+        
+      </fieldset>
+      <fieldset>
+        <legend class="top comments">Comments</legend>
+        <input type="textarea" name="comments" rows="8" cols="75">
+      </fieldset>
+      <input type="submit" value="Report My Storm" class="submitBtn">
+    </form>
+
+  </main>
+  <footer>
+    <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho<br>
+      <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="js/currentdate.js"></script>
+  <script src="js/togglemenu.js"></script>
+  <script src="js/adjustRating.js"></script>
+</body>
+
+</html>

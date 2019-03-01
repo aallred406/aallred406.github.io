@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Weather and local events for the Tri-Cities, Preston, Soda Springs and Fish Haven, Idaho">
+  <title>Idaho Tri-Cities Weather | Storm Center | Weather Conditions and Forecast</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&7cSpecial+Elite" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small-7.css" rel="stylesheet">
+  <link href="css/medium-7.css" rel="stylesheet">
+  <link href="css/large-7.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="images/weather-icon.png" alt="sun covered by storm cloud" id="logo">
+    <div class="headertext">
+      <h1>Idaho Tri-Cities Weather</h1>
+      <div id="motto">
+        Enjoying the outdoors in South East Idaho.
+      </div>
+    </div>
+  </header>
+  <nav>
+
+    <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#" class="active">Storm Center</a></li>
+      <li><a href="">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div>
+      <h1>Thanks for sharing with us!</h1>
+      <h2>Your weather event has been reported.</h2>
+    </div>
+
+  </main>
+  <footer>
+    <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho<br>
+      <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="js/currentdate.js"></script>
+  <script src="js/togglemenu.js"></script>
+  <script src="js/windchill.js"></script>
+</body>
+
+</html>

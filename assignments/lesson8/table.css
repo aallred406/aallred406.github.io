@@ -1,6 +1,7 @@
 table {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 thead th{
   background-color: #7fb9c2;
