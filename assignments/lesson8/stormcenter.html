@@ -9,9 +9,9 @@
   <title>Idaho Tri-Cities Weather | Storm Center | Weather Conditions and Forecast</title>
   <link href="https://fonts.googleapis.com/css?family=Lato&7cSpecial+Elite" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/small-7.css" rel="stylesheet">
-  <link href="css/medium-7.css" rel="stylesheet">
-  <link href="css/large-7.css" rel="stylesheet">
+  <link href="css/small-8.css" rel="stylesheet">
+  <link href="css/medium-8.css" rel="stylesheet">
+  <link href="css/large-8.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,11 +28,11 @@
 
     <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
     <ul id="primaryNav" class="hide">
-      <li><a href="../lesson7/preston-7.html">Preston</a></li>
+      <li><a href="pages/preston-7.html">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
       <li><a href="#" class="active">Storm Center</a></li>
-      <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      <li><a href="pages/gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
   <main>
@@ -47,8 +47,8 @@
       <fieldset>
         <legend>Storm Information</legend>
         <label class="top">Storm Date: <input type="date" name="date"></label>
-        <label class="top">Storm Type: <input list="stormType" name="stormType" placeholder="Please Select">
-        <datalist name="stormType">
+        <label class="top">Storm Type: <input type="text" list="stormTypes" name="stormType" placeholder="Please Select">
+        <datalist id="stormTypes">
           <option value="Flash Flood"></option>
           <option value="Hail"></option>
           <option value="Hurricane"></option>
