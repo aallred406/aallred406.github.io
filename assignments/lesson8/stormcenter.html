@@ -39,7 +39,7 @@
     <form method="GET" action="thanks.html">
       <fieldset>
         <legend>Personal Information</legend>
-        <label class="top">Full Name*: <input type="text" name="name" min="5" pattern="[A-Za-z]" required></label>
+        <label class="top">Full Name*: <input type="text" name="name" min="5" pattern="[A-Za-z\s]+" required></label>
         <label class="top">Email: <input type="email" name="email" placeholder="someone@email.com"></label>
         <label class="top">Phone*: <input type="tel" name="phone" required></label>
         <label class="top">Zip Code*: <input type="number" name="zip" required></label>
@@ -48,14 +48,14 @@
         <legend>Storm Information</legend>
         <label class="top">Storm Date: <input type="date" name="date"></label>
         <label class="top">Storm Type: <input list="stormType" name="stormType" placeholder="Please Select">
-        <datalist id="stormType">
+        <datalist name="stormType">
           <option value="Flash Flood"></option>
           <option value="Hail"></option>
           <option value="Hurricane"></option>
           <option value="Thunderstorm"></option>
           <option value="Tornado"></option>
         </datalist></label>
-        <label class="top">Storm Severity: </label><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
+        <label class="top">Storm Severity: </label><input type="range" name="severe" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
         <label class="top">Storm Region: 
           <select name="region">
             <option>Select Region</option>
