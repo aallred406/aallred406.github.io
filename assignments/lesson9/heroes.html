@@ -23,15 +23,22 @@
   <script>
     var header = document.querySelector('header');
     var section = document.querySelector('section');
+    //where your info is located
     var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    //creating a request for info
     var request = new XMLHttpRequest();
+    //open the request
     request.open('GET', requestURL);
+    //how you want to get the info back
     request.responseType = 'json';
+    //send the request
     request.send();
+    //when the response is returned, what are we going to do with it
     request.onload = function () {
       var superHeroes = request.response;
       populateHeader(superHeroes);
       showHeroes(superHeroes);
+      //info rec'd and converted to JavaScript
       function populateHeader(jsonObj) {
         var myH1 = document.createElement('h1');
         myH1.textContent = jsonObj['squadName'];
@@ -41,6 +48,7 @@
         myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
         header.appendChild(myPara);
       }
+      //create and display cards
       function showHeroes(jsonObj) {
         var heroes = jsonObj['members'];
 
