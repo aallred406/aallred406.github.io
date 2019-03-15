@@ -109,13 +109,21 @@ footer {
 .fiveday {
   align-content: center;
   display: none;
-  padding:10px;
 }
-.fiveday h3 {
+.fiveday h2 {
   text-align: center;
+}
+.fiveday table {
+  background: #afcbff;
+}
+.fiveday table td, th {
+  padding: 10px;
 }
 .forcastimg {
   max-width: 50px;
+}
+.disclaimer {
+  font-size: .75rem;
 }
 #class {
   max-width: 100%;
@@ -130,6 +138,13 @@ article {
   padding: 10px;
   display: flex;
   flex-flow: column wrap;
+}
+.calendar {
+  background: #f0f0f0;
+  padding: 10px;
+}
+.calendar ul {
+  margin-left: 20px;
 }
 .gallerygrid {
   display: grid;
@@ -200,6 +215,7 @@ form label.comments{
 .towns {
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 10px;
 }  
 .townPic {
   max-width: 100%;

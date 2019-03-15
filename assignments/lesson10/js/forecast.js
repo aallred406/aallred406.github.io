@@ -9,15 +9,21 @@ forecastRequest.onload = function () {
   console.log(forecast);
   let highTemp = [];
   let day = 1;
-  let icon = "http://openweathermap.org/img/w/" + forecast.weather[0].icon + "png";
-  let desc = forecast.weather[0].description;
+  let weekday = [];
+  var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
 
-  for (let i = 0; i < forecast.list.length; i++) {
-    if (list.dt_txt.includes("18:00:00")) {
-      highTemp[day] = forecast.main.temp;
-      document.getElementById("forecast" + i).innerHTML = highTemp[i] + "&deg; F";
-      document.getElementById("cc-img").setAttribute("src", icon);
-      document.getElementById("cc-img").setAttribute("alt", desc);
+  for (let i = 0; i < forecast.list.length && day < 6; i++) {
+    if (forecast.list[i].dt_txt.includes("18:00:00")) {
+      highTemp[i] = forecast.list[i].main.temp;
+      let icon = "http://openweathermap.org/img/w/" + forecast.list[i].weather[0].icon + ".png";
+      let desc = forecast.list[i].weather[0].description;
+      let now = new Date(forecast.list[i].dt_txt);
+      weekday = days[now.getDay()];
+      document.getElementById("day" + day).innerHTML = weekday;
+      document.getElementById("forecast" + day).innerHTML = highTemp[i] + "&deg; F";
+      //document.getElementById("ccimg" + day).setAttribute("src", icon);
+      //document.getElementById("ccimg" + day).setAttribute("alt", desc);
+      day++;
     }
   }
 }

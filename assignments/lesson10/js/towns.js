@@ -23,7 +23,7 @@ request.onload = function () {
       para1.textContent = "Motto: " + town[i].motto;
       para2.textContent = "Year Founded: " + town[i].yearFounded;
       para3.textContent = "Population: " + town[i].currentPopulation;
-      para4.textContent = "Annual Rain Fall: " + town[i].averageRainfall;
+      para4.textContent = "Annual Rain Fall: " + town[i].averageRainfall + " inches";
 
       article.appendChild(myH2);
       article.appendChild(para1);

@@ -54,26 +54,28 @@
       </div>
     </section>
     <section class="fiveday">
-      <h3>Five Day Forcast</h3>
+      <h2>Five Day Forcast</h2>
       <table>
         <tr>
-          <th>Saturday</th>
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
+          <th id="day1"></th>
+          <th id="day2"></th>
+          <th id="day3"></th>
+          <th id="day4"></th>
+          <th id="day5"></th>
         </tr>
         <tr>
-          <td id="forecast1"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
-          <td id="forecast2"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
-          <td id="forecast3"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
-          <td id="forecast4"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
-          <td id="forecast5"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
+          <td id="forecast1"><img src="" alt="" class="forcastimg" id="ccimg1"><br></td>
+          <td id="forecast2"><img src="" alt="" class="forcastimg" id="ccimg2"><br></td>
+          <td id="forecast3"><img src="" alt="" class="forcastimg" id="ccimg3"><br></td>
+          <td id="forecast4"><img src="" alt="" class="forcastimg" id="ccimg4"><br></td>
+          <td id="forecast5"><img src="" alt="" class="forcastimg" id="ccimg5"><br></td>
         </tr>
       </table>
+      <p class="disclaimer">*Weather information provided by <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a></p>
     </section>
-    <section class="calendar" id="events">
+    <section class="calendar">
       <h2>Upcoming Events</h2>
+      <p id="events"></p>
       
     </section>
     <article>
@@ -107,7 +109,7 @@
 
   </main>
   <footer>
-    <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho<br>
+    <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho | *Weather and Forecasts provided by <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a><br>
       <span id="currentdate"></span>
     </p>
   </footer>
