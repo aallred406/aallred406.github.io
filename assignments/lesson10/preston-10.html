@@ -46,11 +46,11 @@
                      1200px" src="images/preston-hero-1200.jpg" alt="farmer's field at sunset" id="hero">
       <div class="weathersummary">
         <h3>Weather Summary</h3>
-        <p class="label">Currently: <span class="value" id="tempF">-11&deg;</span></p>
-        <p class="label">High: <span class="value">0&deg;</span></p>
+        <p class="label">Currently: <span class="value" id="tempF"></span></p>
+        <p class="label">High: <span class="value" id="high"></span></p>
         <p class="label">Wind Chill: <span class="value" id="windchill"></span></p>
-        <p class="label">Wind Speed: <span class="value" id="wind">7 mph</span></p>
-        <p class="label">Humidity: <span class="value">45%</span></p>
+        <p class="label">Wind Speed: <span class="value" id="wind"></span></p>
+        <p class="label">Humidity: <span class="value" id="humid"></span></p>
       </div>
     </section>
     <section class="fiveday">
@@ -64,13 +64,17 @@
           <th>Wednesday</th>
         </tr>
         <tr>
-          <td><img src="images/snow-icon.png" alt="snow cloud" class="forcastimg"><br>-5&deg;</td>
-          <td><img src="images/snow-icon.png" alt="snow cloud" class="forcastimg"><br>2&deg;</td>
-          <td><img src="images/cloudy-icon.png" alt="cloudy" class="forcastimg"><br>10&deg;</td>
-          <td><img src="images/partly-sunny-icon.png" alt="sun covered by cloud" class="forcastimg"><br>15&deg;</td>
-          <td><img src="images/partly-sunny-icon.png" alt="sun covered by cloud" class="forcastimg"><br>21&deg;</td>
+          <td id="forecast1"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
+          <td id="forecast2"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
+          <td id="forecast3"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
+          <td id="forecast4"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
+          <td id="forecast5"><img src="" alt="" class="forcastimg" id="cc-img"><br></td>
         </tr>
       </table>
+    </section>
+    <section class="calendar" id="events">
+      <h2>Upcoming Events</h2>
+      
     </section>
     <article>
       <picture>
@@ -107,8 +111,11 @@
       <span id="currentdate"></span>
     </p>
   </footer>
+  <script src="js/currentTemp.js"></script>
+  <script src="js/forecast.js"></script>
   <script src="js/currentdate.js"></script>
   <script src="js/togglemenu.js"></script>
+  <script src="js/events.js"></script>
   <script src="js/windchill.js"></script>
 </body>
 
