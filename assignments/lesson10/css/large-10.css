@@ -38,9 +38,9 @@ header {
 }
 table {
   border-collapse: collapse;
+  border: solid #302e2e 2px;
 }
 table, th, td {
-  border: solid #302e2e 2px;
   text-align: center;
   vertical-align: middle;
 }

@@ -113,13 +113,16 @@ footer {
 .fiveday h2 {
   text-align: center;
 }
-.fiveday table {
+.fiveday table td {
+  background: #F0EBCE;
+}
+.fiveday table th {
   background: #afcbff;
 }
 .fiveday table td, th {
   padding: 10px;
 }
-.forcastimg {
+.forecastimg {
   max-width: 50px;
 }
 .disclaimer {

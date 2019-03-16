@@ -15,14 +15,15 @@ forecastRequest.onload = function () {
   for (let i = 0; i < forecast.list.length && day < 6; i++) {
     if (forecast.list[i].dt_txt.includes("18:00:00")) {
       highTemp[i] = forecast.list[i].main.temp;
-      let icon = "http://openweathermap.org/img/w/" + forecast.list[i].weather[0].icon + ".png";
+      let icon = "https://openweathermap.org/img/w/" + forecast.list[i].weather[0].icon + ".png";
       let desc = forecast.list[i].weather[0].description;
       let now = new Date(forecast.list[i].dt_txt);
       weekday = days[now.getDay()];
       document.getElementById("day" + day).innerHTML = weekday;
       document.getElementById("forecast" + day).innerHTML = highTemp[i] + "&deg; F";
-      //document.getElementById("ccimg" + day).setAttribute("src", icon);
-      //document.getElementById("ccimg" + day).setAttribute("alt", desc);
+      //console.log(icon);
+      document.getElementById("ccimg" + day).setAttribute("src", icon);
+      document.getElementById("ccimg" + day).setAttribute("alt", desc);
       day++;
     }
   }
