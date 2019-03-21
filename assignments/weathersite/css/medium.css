@@ -1,0 +1,33 @@
+@media only screen and (min-width: 32.5em) {
+
+.gallerygrid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.towns {
+  display: grid;
+  grid-template-areas: "left middle right";
+  grid-column-gap: 10px;
+}
+#Preston {
+  grid-area: left;
+}
+#SodaSprings {
+  grid-area: middle;
+}
+#FishHaven {
+  grid-area: right;
+}
+.contact {
+  background: #f0f0f0;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "left right";
+  justify-items: center;
+}
+.contactinfo {
+  grid-area: left;
+}
+.map {
+  grid-area: right;
+}
+}

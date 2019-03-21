@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Special+Elite');
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  color: #302e2e;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Special Elite", monospace;
+}
+/*----- nav bar -----*/
+nav{
+  list-style-type: none;
+  background: #302e2e;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: #afcbff;
+  padding: 10px;
+}
+nav a:visited {
+  color: #F0EBCE;
+}
+nav a:hover {
+  color: #302e2e;
+  background: #F0EBCE;
+}
+nav ul {
+  display: flex;
+  flex-direction:column;
+  list-style-type: none;
+}
+ul {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.navigation li:first-child{
+  display: flex;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: flex;
+}
+nav ul:first-child {
+  background: #302e2e;
+  margin: .2rem 2%;
+  border: none;
+  font-size: 1.6rem;
+  color: #B2E4DB;
+  justify-content: center;
+}
+
+/*----- body -----*/
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  align-content: center;
+}
+header {
+  background: #B2E4DB;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+#motto {
+  font-family: "Special Elite", monospace;
+}
+.active {
+  background-color: rgba(190, 188, 188, 0.2);
+  color: #f0f0f0;
+}
+#hero {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.mainhero {
+  position: relative;
+}
+footer {
+  background: #B2E4DB;
+  padding: 15px;
+  text-align: center;
+  max-width: 960px;
+  align-content: center;
+  margin: auto;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background: #302e2e;
+  color: #f0f0f0;
+  padding: 15px;
+  text-align: center;
+  opacity: .8;
+}
+.label {
+  text-align: left;
+}
+.townname {
+  text-align: center;
+}
+/*----- forecast -----*/
+.fiveday {
+  align-content: center;
+  display: none;
+}
+.fiveday h2 {
+  text-align: center;
+}
+.fiveday table td {
+  background: #F0EBCE;
+}
+.fiveday table th {
+  background: #afcbff;
+}
+.fiveday table td, th {
+  padding: 10px;
+}
+.forecastimg {
+  max-width: 50px;
+}
+.disclaimer {
+  font-size: .75rem;
+}
+/*----- article -----*/
+#class {
+  max-width: 100%;
+}
+article {
+  background: #B2E4DB;
+  padding: 10px;
+  overflow: auto;
+}
+.contact {
+  background: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+}
+/*----- events -----*/
+.calendar {
+  background: #f0f0f0;
+  padding: 10px;
+}
+.calendar ul {
+  margin-left: 20px;
+}
+.gallerygrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.gallerygrid figure img {
+  width: 100%;
+}
+/*---FORM---*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #B2E4DB;
+  padding: .5rem 2%;
+}
+form legend {
+  color: #302e2e;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+form label.top {
+  display: block;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: .8rem;
+  color: #302e2e;
+}
+form label.sbs {
+  display: block;
+  justify-content: center;
+  padding: .75rem;
+  color: #302e2e;
+}
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(178, 228, 219, .5);
+}
+form label.sbs {
+  display: block;
+  padding: .75rem;
+  color: #302e2e;
+  font-size: .8rem;
+}
+form input.submitBtn {
+  border: none;
+  background-color: rgba(175, 203, 255, .5);
+  color: #302e2e;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  border-radius: 1rem;
+}
+form label.top:required {
+  border-left: 5px solid red;
+}
+form label.top:required:valid {
+  border-left: 5px solid green;
+}
+form label.comments{
+  height: 20px;
+  width: 100%;
+  max-width: 20rem;
+}
+/*-----INDEX-----*/
+.towns {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 10px;
+}  
+.townPic {
+  max-width: 100%;
+}
