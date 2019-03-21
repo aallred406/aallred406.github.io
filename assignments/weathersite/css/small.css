@@ -49,7 +49,7 @@ nav ul:first-child {
   background: #302e2e;
   margin: .2rem 2%;
   border: none;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #B2E4DB;
   justify-content: center;
 }
@@ -156,6 +156,7 @@ article {
 .calendar ul {
   margin-left: 20px;
 }
+/*----Gallery----*/
 .gallerygrid {
   display: grid;
   grid-template-columns: 1fr;

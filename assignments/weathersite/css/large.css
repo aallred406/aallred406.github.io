@@ -33,7 +33,7 @@ header {
 }
 table {
   border-collapse: collapse;
-  border: solid #302e2e 2px;
+  border: solid #302e2e 1px;
 }
 table, th, td {
   text-align: center;
