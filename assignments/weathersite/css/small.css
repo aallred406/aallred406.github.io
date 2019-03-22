@@ -31,8 +31,6 @@ nav ul {
   display: flex;
   flex-direction:column;
   list-style-type: none;
-}
-ul {
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -93,7 +91,6 @@ footer {
   align-content: center;
   margin: auto;
 }
-
 .weathersummary {
   position: absolute;
   top: 5px;
