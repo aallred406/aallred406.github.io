@@ -8,7 +8,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Special Elite", monospace;
 }
-/*----- nav bar -----*/
 nav{
   list-style-type: none;
   background: #302e2e;
@@ -51,8 +50,6 @@ nav ul:first-child {
   color: #B2E4DB;
   justify-content: center;
 }
-
-/*----- body -----*/
 main {
   max-width: 960px;
   margin: 0 auto;

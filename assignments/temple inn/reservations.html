@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="hotel and services for temples Montana, Wyoming, Saskatchewan, North Dakota">
+  <title>Temple Inn & Suites | Reservations | Hotels & Services for temple patrons</title>
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Tajawal" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="headerimg"></div>  
+    <div class="headertext">
+    <img src="images/logo.png" alt="Temple Inn & Suites Logo" class="logo">
+    <h1>Temple Inn & Suites</h1>
+    <p class="motto">Helping you Stand in Holy Places</p>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" class="menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="#" class="active">Reservations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+   <form method="GET" action="thanks.html">
+     <fieldset>
+       <legend>Hotel Accommodations</legend>
+       <label class="top">Please select desired temple: 
+         <select name="templelocation">
+           <option>Select temple</option>
+           <option value="Billings, MT">Billings, MT</option>
+           <option value="Bismark, ND">Bismark, ND</option>
+           <option value="Regina, SK">Regina, Sask</option>
+           <option value="Star Valley, WY">Star Valley, WY</option>
+         </select>
+      </label>
+      <label class="top">Check-in date: <input type="date" name="checkin"></label>
+      <label class="top">Check-out date: <input type="date" name="checkout"></label>
+      <label class="top">Number of guests: <input type="number" name="guests"></label>
+      <label class="sbs">Please select room type: <br><input type="radio" value="Standard" name="standard">Standard Room<br><input type="radio" value="Suite" name="suite">Suite
+      </label>
+     </fieldset>
+     <fieldset>
+       <legend>Available Services</legend>
+       <label class="sbs">Childcare required? <br><input type="radio" value="Yes" name="care">Yes<br><input type="radio" value="No" name="care">No</label>
+       <label class="top"> If yes, when: <input type="date" name="careday"> From: <input type="time" name="starttime">To: <input type="time" name="endtime"></label>
+       <label class="top"></label>
+       <label class="sbs">Reception hall required? <br><input type="radio" value="Yes" name="reception">Yes<br><input type="radio" value="No" name="norecption">No</label>
+       <label class="top"> If yes, when: <input type="date" name="recepday"> From: <input type="time" name="recpstarttime">To: <input type="time" name="recpendtime"></label>
+       <label class="sbs">Gathering room required? <br><input type="radio" value="Yes" name="gathering">Yes<br><input type="radio" value="No" name="nogathering">No</label>
+       <label class="top"> If yes, when: <input type="date" name="gathday"> From: <input type="time" name="gathstarttime">To: <input type="time" name="gathendtime"></label>
+     </fieldset>
+     <fieldset>
+       <legend>Contact Information</legend>
+       <label class="top">*Full Name: <input type="text" name="name" required></label>
+       <label class="top">*Email: <input type="email" name="email" required></label>
+       <label class="top">*Phone Number: <input type="tel" name="phone" required></label>
+       <label class="top">Home Location:
+         <select name="home">
+           <option>Please Select</option>
+           <option value="Alabama">Alabama</option>
+           <option value="Alaska">Alaska</option>
+           <option value="Alberta">Alberta</option>
+           <option value="Arizona">Arizona</option>
+           <option value="Arkansas">Arkansas</option>
+           <option value="British Columbia">British Columbia</option>
+           <option value="California">California</option>
+           <option value="Colorado">Colorado</option>
+           <option value="Connecticut">Connecticut</option>
+           <option value="Delaware">Delaware</option>
+           <option value="Florida">Florida</option>
+           <option value="Georgia">Georgia</option>
+           <option value="Hawaii">Hawaii</option>
+           <option value="Idaho">Idaho</option>
+           <option value="Illinois">Illinois</option>
+           <option value="Indiana">Indiana</option>
+           <option value="Iowa">Iowa</option>
+           <option value="Kansas">Kansas</option>
+           <option value="Kentucky">Kentucky</option>
+           <option value="Louisiana">Louisiana</option>
+           <option value="Maine">Maine</option>
+           <option value="Manitoba">Manitoba</option>
+           <option value="Maryland">Maryland</option>
+           <option value="Massachusetts">Massachusetts</option>
+           <option value="Michigan">Michigan</option>
+           <option value="Minnesota">Minnesota</option>
+           <option value="Mississippi">Mississippi</option>
+           <option value="Missouri">Missouri</option>
+           <option value="Montana">Montana</option>
+           <option value="Nebraska">Nebraska</option>
+           <option value="Nevada">Nevada</option>
+           <option value="New Brunswick">New Brunswick</option>
+           <option value="Newfoundland">Newfoundland</option>
+           <option value="New Hampshire">New Hampshire</option>
+           <option value="New Jersey">New Jersey</option>
+           <option value="New Mexico">New Mexico</option>
+           <option value="New York">New York</option>
+           <option value="North Carolina">North Carolina</option>
+           <option value="North Dakota">North Dakota</option>
+           <option value="Northwest Territories">Northwest Territories</option>
+           <option value="Nova Scotia">Nova Scotia</option>
+           <option value="Nunavut">Nunavut</option>
+           <option value="Ohio">Ohio</option>
+           <option value="Oklahoma">Oklahoma</option>
+           <option value="Ontario">Ontario</option>
+           <option value="Oregon">Oregon</option>
+           <option value="Pennsylvania">Pennsylvania</option>
+           <option value="Prince Edward Island">Prince Edward Island</option>
+           <option value="Quebec">Quebec</option>
+           <option value="Rhode Island">Rhode Island</option>
+           <option value="Saskatchewan">Saskatchewan</option>
+           <option value="South Carolina">South Carolina</option>
+           <option value="South Dakota">South Dakota</option>
+           <option value="Tennessee">Tennessee</option>
+           <option value="Texas">Texas</option>
+           <option value="Utah">Utah</option>
+           <option value="Vermont">Vermont</option>
+           <option value="Virginia">Virginia</option>
+           <option value="Yukon">Yukon</option>
+           <option value="Washington">Washington</option>
+           <option value="West Virginia">West Virginia</option>
+           <option value="Wisconsin">Wisonsin</option>
+           <option value="Wyoming">Wyoming</option>
+         </select>
+       </label>
+     </fieldset>
+     <fieldset class="comments">
+       <legend>Comments</legend>
+       <label class="top">Please let us know if you have special accommodations: <input type="text" name="comments" class="comment"></label>
+     </fieldset>
+     <input type="submit" value="Reserve My Temple Experience" class="submitbutton">
+   </form>
+  </main>
+  <footer>
+    <p class="footer">&copy; 2019 | Ashley Allred | Brigham Young University - Idaho</p>
+  </footer>
+  <script src="js/toggleMenu.js"></script>
+</body>
+
+</html>

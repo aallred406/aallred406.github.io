@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Tajawal');
+
+body {
+  font-family: "Tajawal", sans-serif;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alex Brush", cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.action {
+  font-size: 2.5rem;
+  border: solid 1px #0c090d;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+}
+h2 a {
+  text-decoration: none;
+  color: #0c090d;
+}
+header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+}
+.headerimg {
+  background-image: url("../images/boston-hero.jpg");
+  background-color: #E8E8E8;
+  filter: opacity(60%);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.headertext {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: right;
+  padding: 10px;
+}
+.motto {
+  font-family: "Alex Brush", cursive;
+  font-size: 2rem;
+  margin-left: 100px;
+}
+.logo {
+  max-width: 100px;
+  margin: 15px;
+}
+nav {
+  list-style-type: none;
+  background: #0c090d;
+}
+nav a {
+  text-decoration: none;
+  color: #f2f3d9;
+  display: flex;
+  padding: 10px;
+}
+nav a:visited {
+  color: #f4cd77;
+}
+nav a:hover {
+  color: #E8E8E8;
+}
+.navigation {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navigation li:first-child {
+  display: flex;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: flex;
+}
+.slideshow {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  max-width: 400px;
+}
+.myslides {
+  display: none;
+  max-width: 100%;
+}
+.caption {
+  font-family: "Alex Brush", cursive;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 400px;
+  max-width: 500px;
+}
+form fieldset {
+  border: solid 1px #f4cd77;
+  border-radius: 1rem;
+  width: 350px;
+}
+form legend {
+  color: #0c090d;
+  font-family: "Alex Brush", cursive;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+form label.top {
+  color: #0c090d;
+  display: flex;
+  flex-flow: column wrap;
+  padding: .75em;
+}
+form label.top input {
+  display: flex;
+}
+form label.sbs {
+  display: flex;
+  flex-flow: column wrap;
+  padding: .75em;
+}
+form label.top input:required {
+  background: #f4cd77;
+}
+form label.top input:required:valid {
+  background: #fdfffd;
+}
+.comment {
+  height: 100px;
+  width: 100%;
+}
+.comments {
+  margin: 0 15px 15px 15px;
+}
+.submitbutton {
+  font-family: "Alex Brush", cursive;
+  color: #0c090d;
+  font-size: 1.5rem;
+  padding: 5px;
+  background: #f4cd77;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px #0c090d; 
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.thankshead {
+  border: none;
+}
+.info {
+  background-color: #f2f3d9;
+  padding: 10px;
+}
+.infotitle {
+  border: none;
+}
+.contact {
+  background-color: #f4cd77;
+  box-shadow: 5px 5px 20px #0c090d;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.contact h3 {
+  font-size: 1.5rem;
+}
+.contactinfo {
+  background-color: #f2f3d9;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contactform {
+  display: flex;
+  flex-flow: column wrap;
+}
+.message {
+  height: 100px;
+  width: 100%;
+}
+.send {
+  font-family: "Alex Brush", cursive;
+  color: #0c090d;
+  font-size: 1.5rem;
+  padding: 5px;
+  background: #f4cd77;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px #0c090d; 
+  margin: 10px;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background: #E8E8E8;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
