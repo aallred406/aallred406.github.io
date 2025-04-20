@@ -1,0 +1,29 @@
+{
+  "name": "aallred406.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:react": "cd vite-react && npm run build",
+    "build:11ty": "eleventy",
+    "build": "npm run build:react && npm run build:11ty",
+    "dev:react": "cd vite-react && npm run dev",
+    "dev:11ty": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aallred406/aallred406.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aallred406/aallred406.github.io/issues"
+  },
+  "homepage": "https://github.com/aallred406/aallred406.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
